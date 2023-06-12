@@ -1,1 +1,66 @@
-<p>forms works!</p>
+<div>
+    <h1>Consultar CEP</h1>
+    <form #f="ngForm" method="get">
+        CEP:    
+        <input
+            #buscaCep
+            type="text"
+            name="cep"
+            id="cep"
+            (blur)="blur($event)"
+            ngModel
+            [(ngModel)]="cep"
+            required
+        >
+        <br>
+        <label for="nome">LOGRADOURO:</label>
+        <input
+            type="text"
+            name="logradouro"
+            id="logradouro"
+            ngModel
+            [(ngModel)]="logradouro"
+            required
+        >
+        <br>
+        <label for="nome">LOCALIDADE:</label>
+        <input
+            type="text"
+            name="localidade"
+            id="localidade"
+            ngModel
+            [(ngModel)]="localidade"
+            required
+        >
+        <br>
+        <label for="nome">BAIRRO:</label>
+        <input
+            type="text"
+            name="bairro"
+            id="bairro"
+            ngModel
+            [(ngModel)]="bairro"
+            required
+        >
+        <br>
+        <label for="nome">UF:</label>
+        <input
+            type="text"
+            name="uf"
+            id="uf"
+            ngModel
+            [(ngModel)]="uf"
+            required
+        >
+        <br>
+        <label for="nome">DDD:</label>
+        <input
+            type="text"
+            name="ddd"
+            id="ddd"
+            ngModel
+            [(ngModel)]="ddd"
+            required
+        >
+    </form>
+</div>
